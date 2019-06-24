@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="text-center">login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="padding">
+
+ <div style="text-align: center">
+    <ion-avatar slot="start">
+        <ion-img [src]=""></ion-img>
+    </ion-avatar>
+ </div>
+
+  <div style="margin-top:40%;margin-left:10%;margin-right:10%;">
+    <ion-item>
+      <ion-label position="floating">Login</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+    
+    <ion-item>
+      <ion-label position="floating">Password</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+  </div>
+  <div style="margin-top:1% ;margin-right:8%">
+      <ion-button class="ion-float-right" (click)="_login()">
+      Sign In
+      <ion-icon name="log-in" slot="end"></ion-icon>
+    </ion-button>
+  </div>
+</ion-content>
