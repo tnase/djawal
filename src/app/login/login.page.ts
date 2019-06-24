@@ -7,10 +7,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-
+   logo: any;
   constructor(private router: Router) { }
 
   ngOnInit() {
+    this.logo = '../../assets/imgs/logo.png' ;
   }
 
   _login(){
