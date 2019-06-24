@@ -1,5 +1,7 @@
 {
   "name": "djawal",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
