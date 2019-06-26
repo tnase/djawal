@@ -1,5 +1,6 @@
 export const environment = {
-  production: true
+  production: true,
+  baseUrl:'http://195.201.121.149:8089'
 };
 
 const baseUrl='http://195.201.121.149:8089'+"dashboard/";

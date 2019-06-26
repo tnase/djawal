@@ -14,7 +14,7 @@ const httpOptions = {
 
 
 
-const OAUTHTOKEN = "oauth/token";
+const OAUTHTOKEN = "/oauth/token";
 const getuser= "dashboard/getUtilsateurByPseudo/"
 const ACCESSTOKEN = "access_token";
 const USERNAME="username"
@@ -52,17 +52,18 @@ export class LoginService {
          {
           localStorage.setItem('user', JSON.stringify(this.usr))          
            this.router.navigate(['/commandes']);
-          // alert("Vous n'avez l'autorisation de vous connecter")
+          alert("Vous n'avez l'autorisation de vous connecter")
          }else{
-          alert('vous ne pouvez pas vous connecter !!!)
-          this.router.navigate(['/login']);
+           alert("connexion echouée");
+          // this.router.navigate(['/login']);
          }
       });            
 
        
       },
       error => {
-        console.log(error.status)
+
+        console.log(error.status+this.url)
           alert("Login ou Mot de passe Incorrect");
       }
     )

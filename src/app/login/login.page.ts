@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import {LoginService} from  '../service/login.service';
+
 
 @Component({
   selector: 'app-login',
@@ -10,14 +12,16 @@ export class LoginPage implements OnInit {
    logo: any;
    username:any ;
    password:any ;
-  constructor(private router: Router) { }
+  constructor(private router: Router,private loginService : LoginService ) { }
 
   ngOnInit() {
     this.logo = '../../assets/imgs/logo.png' ;
   }
 
   _login(){
-      this.router.navigate(['/commandes']) ;
+    console.log(this.username+"++++"+this.password)
+    this.loginService.login(this.username,this.password)
+    
   }
 
 }
