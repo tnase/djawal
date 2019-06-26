@@ -3,8 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  baseUrl :'http://195.201.121.149:8089'
 };
+
+
+const baseUrl1='http://195.201.121.149:8089'+"dashboard/";
+
+ export const API ={
+   GET_ALL_COMMAND:baseUrl1+"listCommande"
+}
 
 /*
  * For easier debugging in development mode, you can import the following file
@@ -15,9 +23,4 @@ export const environment = {
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
 
-const baseUrl='http://195.201.121.149:8089'+"dashboard/";
-
-const API ={
-   GET_ALL_COMMAND:baseUrl+"listCommande"
-}
 

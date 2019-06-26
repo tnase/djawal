@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Wed Jun 26 2019 11:58:29 GMT+0100 (Afr. centrale Ouest)
+------------------------------------------------------
+
+Modified files:
+* src/app/service/login.service.ts
+* src/environments/environment.prod.ts
+* src/environments/environment.ts
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
