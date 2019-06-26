@@ -14,3 +14,10 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+
+const baseUrl='http://195.201.121.149:8089'+"dashboard/";
+
+const API ={
+   GET_ALL_COMMAND:baseUrl+"listCommande"
+}
+
