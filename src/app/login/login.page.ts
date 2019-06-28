@@ -19,9 +19,8 @@ export class LoginPage implements OnInit {
   }
 
   _login(){
-    console.log(this.username+"++++"+this.password)
-    this.loginService.login(this.username,this.password)
-    
+    alert(this.username+"++++"+this.password)
+    this.loginService.login(this.username,this.password) 
   }
 
 }

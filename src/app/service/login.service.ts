@@ -52,7 +52,7 @@ export class LoginService {
          {
           localStorage.setItem('user', JSON.stringify(this.usr))          
            this.router.navigate(['/commandes']);
-          alert("Vous n'avez l'autorisation de vous connecter")
+          alert("Vous avez l'autorisation de vous connecter")
          }else{
            alert("connexion echouée");
           // this.router.navigate(['/login']);
@@ -62,9 +62,8 @@ export class LoginService {
        
       },
       error => {
-
         console.log(error.status+this.url)
-          alert("Login ou Mot de passe Incorrect");
+        alert("Login ou Mot de passe Incorrect");
       }
     )
     return true;
