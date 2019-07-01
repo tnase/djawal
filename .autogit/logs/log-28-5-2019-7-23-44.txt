@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Fri Jun 28 2019 07:23:44 GMT+0100 (Afr. centrale Ouest)
+------------------------------------------------------
+
+Modified files:
+* src/app/login/login.page.ts
+* src/app/service/login.service.ts
+* src/app/service/steed.service.ts
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
