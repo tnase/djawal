@@ -14,7 +14,7 @@ const httpOptions = {
 
 
 
-const OAUTHTOKEN = "/oauth/token";
+const OAUTHTOKEN = "oauth/token";
 const getuser= "dashboard/getUtilsateurByPseudo/"
 const ACCESSTOKEN = "access_token";
 const USERNAME="username"
