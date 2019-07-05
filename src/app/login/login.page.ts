@@ -19,8 +19,7 @@ export class LoginPage implements OnInit {
   }
 
   _login(){
-    alert(this.username+"++++"+this.password)
-    this.loginService.login(this.username,this.password) 
+   this.loginService.login(this.username,this.password) ;
   }
 
 }

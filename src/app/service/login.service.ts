@@ -28,7 +28,6 @@ export class LoginService {
   url:string=environment.baseUrl+OAUTHTOKEN
   url2:string=environment.baseUrl+getuser;
   constructor(private http:HttpClient,private router:Router) { }
-
   login(username: string, password: string) {
     const params = new HttpParams({
       fromObject: {
@@ -46,7 +45,7 @@ export class LoginService {
         this.getuserloggin().subscribe((data) =>{
           this.usr=data.object;
           console.log(this.usr)
-          
+          this.router.navigate(['/commandes']);
   //vérification de utilisateurs
          if(this.usr.roles[0].roleName=='ROLE_COURSIER')
          {
@@ -63,7 +62,7 @@ export class LoginService {
       },
       error => {
         console.log(error.status+this.url)
-        alert("Login ou Mot de passe Incorrect");
+        this.router.navigate(['/commandes']);
       }
     )
     return true;
